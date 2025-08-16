@@ -2,95 +2,85 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Freedon Premium Trading Design System - All colors, gradients, fonts, etc defined here. 
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Premium Trading Color Palette */
+    --background: 218 15% 2%;  /* Deep charcoal with blue tint #0C0F14 */
+    --foreground: 0 0% 98%;    /* Almost white #FAFAFA */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 5%;           /* Near black #131313 */
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 218 15% 2%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 51 100% 50%;    /* Premium gold #FFD700 */
+    --primary-foreground: 0 0% 0%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 0 0% 15%;     /* Dark gray #262626 */
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 0% 8%;          /* Very dark #1F1F1F */
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 45 100% 47%;     /* Golden accent #FFCC00 */
+    --accent-foreground: 0 0% 0%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 0% 15%;
+    --input: 0 0% 8%;
+    --ring: 51 100% 50%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Premium Trading Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(51 100% 50%), hsl(45 100% 47%));
+    --gradient-dark: linear-gradient(180deg, hsl(218 15% 3%), hsl(0 0% 1%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 5%), hsl(0 0% 8%));
+    --gradient-gold-subtle: linear-gradient(90deg, hsl(51 100% 50% / 0.1), hsl(45 100% 47% / 0.1));
+    
+    /* Trading Chart Colors */
+    --chart-green: 142 76% 36%;  /* Bullish green */
+    --chart-red: 0 84% 60%;      /* Bearish red */
+    --chart-grid: 0 0% 20%;      /* Chart grid lines */
+    
+    /* Premium Shadows */
+    --shadow-gold: 0 10px 30px -10px hsl(51 100% 50% / 0.3);
+    --shadow-premium: 0 25px 50px -12px hsl(0 0% 0% / 0.8);
+    --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.6);
+    
+    /* Animations */
+    --transition-premium: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    --transition-fast: all 0.2s ease-out;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Dark mode uses same values as our premium theme */
+    --background: 218 15% 2%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 98%;
+    --popover: 218 15% 2%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 51 100% 50%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 8%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 45 100% 47%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 15%;
+    --input: 0 0% 8%;
+    --ring: 51 100% 50%;
   }
 }
 
@@ -100,6 +90,84 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer components {
+  /* Premium Button Variants */
+  .btn-premium {
+    @apply bg-gradient-to-r from-primary to-accent text-primary-foreground px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105;
+    box-shadow: var(--shadow-gold);
+  }
+  
+  .btn-hero {
+    @apply bg-primary text-primary-foreground px-10 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:bg-accent hover:shadow-xl hover:scale-105;
+    box-shadow: var(--shadow-gold);
+  }
+  
+  .btn-outline-gold {
+    @apply border-2 border-primary text-primary bg-transparent px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:shadow-lg;
+  }
+
+  /* Trading Cards */
+  .trading-card {
+    @apply bg-card border border-border rounded-xl p-6 transition-all duration-300 hover:shadow-lg;
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-card);
+  }
+  
+  .trading-card:hover {
+    box-shadow: var(--shadow-premium);
+    transform: translateY(-4px);
+  }
+
+  /* Price Ticker Animation */
+  .price-ticker {
+    @apply inline-flex items-center gap-2 px-4 py-2 bg-muted rounded-lg;
+    animation: ticker-flash 2s infinite;
+  }
+  
+  @keyframes ticker-flash {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0.7; }
+  }
+
+  /* Premium Text Effects */
+  .text-gradient-gold {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .text-premium {
+    @apply text-foreground font-semibold tracking-wide;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-dark {
+    background: var(--gradient-dark);
+  }
+  
+  .bg-gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  .bg-gradient-gold-subtle {
+    background: var(--gradient-gold-subtle);
+  }
+  
+  .shadow-premium {
+    box-shadow: var(--shadow-premium);
+  }
+  
+  .shadow-gold {
+    box-shadow: var(--shadow-gold);
+  }
+  
+  .transition-premium {
+    transition: var(--transition-premium);
   }
 }
