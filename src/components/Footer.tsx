@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { MessageCircle, Send, Twitter, Facebook, Instagram } from "lucide-react";
-import freedonLogo from "@/assets/freedon-logo.png";
+import freedonLogo from "@/assets/freedon-logo-new.png";
 
 const Footer = () => {
   const quickLinks = [
@@ -14,28 +14,23 @@ const Footer = () => {
   const socialLinks = [
     {
       name: "WhatsApp",
-      href: "https://wa.me/1234567890",
+      href: "https://wa.me/254794432921",
       icon: MessageCircle,
     },
     {
       name: "Telegram",
-      href: "https://t.me/freedon",
+      href: "https://t.me/+7WdulCdgeFQxOWQ0",
       icon: Send,
     },
     {
-      name: "Twitter",
-      href: "https://twitter.com/freedon",
-      icon: Twitter,
-    },
-    {
-      name: "Facebook",
-      href: "https://facebook.com/freedon",
-      icon: Facebook,
-    },
-    {
       name: "Instagram",
-      href: "https://instagram.com/freedon",
+      href: "https://www.instagram.com/ceofredrick?igsh=bHRteGFhbzJicmhv",
       icon: Instagram,
+    },
+    {
+      name: "TikTok",
+      href: "https://www.tiktok.com/@ceofredrickofficial?_t=ZM-8yv5jG1xZFI&_r=1",
+      icon: Twitter,
     },
   ];
 
@@ -99,7 +94,7 @@ const Footer = () => {
               <h3 className="text-foreground font-semibold mb-4">24/7 Support</h3>
               <div className="space-y-3">
                 <a
-                  href="https://wa.me/1234567890"
+                  href="https://wa.me/254794432921"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary transition-colors"
@@ -108,7 +103,7 @@ const Footer = () => {
                   <span>WhatsApp Support</span>
                 </a>
                 <a
-                  href="https://t.me/freedon"
+                  href="https://t.me/+7WdulCdgeFQxOWQ0"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary transition-colors"

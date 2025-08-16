@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import CustomerCare from "@/components/CustomerCare";
 
 const Marketplace = () => {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -19,8 +20,8 @@ const Marketplace = () => {
   const bots = [
     {
       id: 1,
-      title: "Volatility 75 Scalper Bot",
-      description: "High-frequency scalping bot optimized for Volatility 75 index with advanced risk management.",
+      title: "Freedon Auto Trend Bot",
+      description: "Advanced trend-following bot with intelligent market analysis and automated entry/exit strategies.",
       category: "free",
       rating: 4.8,
       downloads: "2.3k",
@@ -29,53 +30,53 @@ const Marketplace = () => {
     },
     {
       id: 2,
-      title: "Crash 1000 Recovery Bot",
-      description: "Specialized recovery algorithm for Crash 1000 with martingale protection and profit optimization.",
-      category: "premium",
+      title: "Version 1.6 Freedon Market Analysis",
+      description: "Comprehensive market analysis system with advanced pattern recognition and signal generation.",
+      category: "free",
       rating: 4.9,
       downloads: "1.8k",
-      features: ["Recovery Algorithm", "Martingale Protection", "Profit Optimization"],
-      isPremium: true,
+      features: ["Pattern Recognition", "Signal Generation", "Market Analytics"],
+      isPremium: false,
     },
     {
       id: 3,
-      title: "Binary Options Predictor",
-      description: "AI-powered prediction system for binary options with 85%+ accuracy rate.",
-      category: "tools",
+      title: "Market Switcher Bot",
+      description: "Intelligent multi-market switching bot that adapts to changing market conditions automatically.",
+      category: "free",
       rating: 4.7,
       downloads: "3.1k",
-      features: ["AI Predictions", "85%+ Accuracy", "Real-time Signals"],
+      features: ["Multi-Market Support", "Auto-Switching", "Adaptive Strategy"],
       isPremium: false,
     },
     {
       id: 4,
-      title: "Boom 500 Trend Bot",
-      description: "Trend-following bot for Boom 500 index with intelligent entry and exit strategies.",
+      title: "Auto Recovery Bot",
+      description: "Smart recovery system with advanced loss prevention and profit maximization algorithms.",
       category: "free",
       rating: 4.6,
       downloads: "1.9k",
-      features: ["Trend Analysis", "Smart Entry/Exit", "Risk Control"],
+      features: ["Recovery Algorithm", "Loss Prevention", "Profit Maximization"],
       isPremium: false,
     },
     {
       id: 5,
-      title: "Multi-Asset Portfolio Bot",
-      description: "Professional portfolio management bot for multiple Deriv assets with advanced diversification.",
+      title: "Premium Version 2.6 Updates Bot",
+      description: "Latest premium trading bot with cutting-edge algorithms and enhanced performance features.",
       category: "premium",
       rating: 4.9,
       downloads: "856",
-      features: ["Multi-Asset Support", "Portfolio Optimization", "Advanced Analytics"],
+      features: ["Latest Algorithms", "Enhanced Performance", "Premium Features"],
       isPremium: true,
     },
     {
       id: 6,
-      title: "Digit Analysis Tool",
-      description: "Comprehensive digit frequency analysis and prediction tool for digit contracts.",
-      category: "tools",
+      title: "Multi Strategy Trading Bot",
+      description: "Professional multi-strategy bot combining scalping, swing, and trend-following approaches.",
+      category: "premium",
       rating: 4.8,
       downloads: "2.7k",
-      features: ["Frequency Analysis", "Pattern Recognition", "Prediction Engine"],
-      isPremium: false,
+      features: ["Multiple Strategies", "Advanced Analytics", "Professional Tools"],
+      isPremium: true,
     },
   ];
 
@@ -174,7 +175,7 @@ const Marketplace = () => {
                       asChild
                     >
                       <a 
-                        href="https://wa.me/1234567890" 
+                        href="https://wa.me/254794432921" 
                         target="_blank" 
                         rel="noopener noreferrer"
                       >
@@ -202,7 +203,7 @@ const Marketplace = () => {
               asChild
             >
               <a 
-                href="https://wa.me/1234567890" 
+                href="https://wa.me/254794432921" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -215,6 +216,7 @@ const Marketplace = () => {
       </div>
 
       <Footer />
+      <CustomerCare />
     </div>
   );
 };

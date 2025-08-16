@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import CustomerCare from "@/components/CustomerCare";
 
 const About = () => {
   const values = [
@@ -266,6 +267,7 @@ const About = () => {
       </div>
 
       <Footer />
+      <CustomerCare />
     </div>
   );
 };

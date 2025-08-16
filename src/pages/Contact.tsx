@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import CustomerCare from "@/components/CustomerCare";
 
 const Contact = () => {
   const contactMethods = [
@@ -13,8 +14,8 @@ const Contact = () => {
       icon: MessageCircle,
       title: "WhatsApp Support",
       description: "Get instant help from our expert team",
-      contact: "+1 234 567 890",
-      href: "https://wa.me/1234567890",
+      contact: "+254794432921",
+      href: "https://wa.me/254794432921",
       available: "24/7",
       color: "primary"
     },
@@ -31,8 +32,8 @@ const Contact = () => {
       icon: Phone,
       title: "Priority Support",
       description: "Premium members exclusive line",
-      contact: "+1 234 567 891",
-      href: "tel:+1234567891",
+      contact: "+254794432921",
+      href: "tel:+254794432921",
       available: "Mon-Fri 9AM-6PM",
       color: "secondary"
     },
@@ -46,16 +47,22 @@ const Contact = () => {
       handle: "@freedon_trading"
     },
     {
-      name: "Facebook",
-      href: "https://facebook.com/freedon",
-      icon: Facebook,
-      handle: "Freedon Trading"
+      name: "Instagram",
+      href: "https://www.instagram.com/ceofredrick?igsh=bHRteGFhbzJicmhv",
+      icon: Instagram,
+      handle: "@ceofredrick"
     },
     {
-      name: "Instagram",
-      href: "https://instagram.com/freedon",
-      icon: Instagram,
-      handle: "@freedon.trading"
+      name: "TikTok", 
+      href: "https://www.tiktok.com/@ceofredrickofficial?_t=ZM-8yv5jG1xZFI&_r=1",
+      icon: MessageCircle,
+      handle: "@ceofredrickofficial"
+    },
+    {
+      name: "Telegram",
+      href: "https://t.me/+7WdulCdgeFQxOWQ0",
+      icon: Send,
+      handle: "Freedon Trading"
     },
   ];
 
@@ -258,6 +265,7 @@ const Contact = () => {
       </div>
 
       <Footer />
+      <CustomerCare />
     </div>
   );
 };

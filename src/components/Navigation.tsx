@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import freedonLogo from "@/assets/freedon-logo.png";
+import freedonLogo from "@/assets/freedon-logo-new.png";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -61,7 +61,7 @@ const Navigation = () => {
               asChild
             >
               <a 
-                href="https://deriv.com" 
+                href="https://freedon.live/" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -125,7 +125,7 @@ const Navigation = () => {
                   asChild
                 >
                   <a 
-                    href="https://deriv.com" 
+                    href="https://freedon.live/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >

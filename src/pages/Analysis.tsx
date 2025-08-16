@@ -4,6 +4,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import AnimatedCounter from "@/components/AnimatedCounter";
+import CustomerCare from "@/components/CustomerCare";
 
 const Analysis = () => {
   const tools = [
@@ -129,7 +131,7 @@ const Analysis = () => {
                       asChild
                     >
                       <a 
-                        href="https://wa.me/1234567890" 
+                        href="https://freedon.live/" 
                         target="_blank" 
                         rel="noopener noreferrer"
                       >
@@ -180,7 +182,7 @@ const Analysis = () => {
                   asChild
                 >
                   <a 
-                    href="https://wa.me/1234567890" 
+                    href="https://freedon.live/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
@@ -209,13 +211,13 @@ const Analysis = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-gradient-gold mb-2">
-                85%+
+                <AnimatedCounter end={85} suffix="%+" />
               </div>
               <div className="text-muted-foreground">Average Accuracy</div>
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-gradient-gold mb-2">
-                50+
+                <AnimatedCounter end={50} suffix="+" />
               </div>
               <div className="text-muted-foreground">Analysis Tools</div>
             </div>
@@ -227,7 +229,7 @@ const Analysis = () => {
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-gradient-gold mb-2">
-                1M+
+                <AnimatedCounter end={1} suffix="M+" />
               </div>
               <div className="text-muted-foreground">Data Points</div>
             </div>
@@ -236,6 +238,7 @@ const Analysis = () => {
       </div>
 
       <Footer />
+      <CustomerCare />
     </div>
   );
 };

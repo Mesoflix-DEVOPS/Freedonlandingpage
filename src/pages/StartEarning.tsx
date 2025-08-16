@@ -1,8 +1,10 @@
-import { ArrowRight, Users, TrendingUp, Shield, DollarSign } from "lucide-react";
+import { DollarSign, TrendingUp, Users, ArrowRight, Shield, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import CustomerCare from "@/components/CustomerCare";
 
 const StartEarning = () => {
   const earningMethods = [
@@ -254,6 +256,7 @@ const StartEarning = () => {
       </div>
 
       <Footer />
+      <CustomerCare />
     </div>
   );
 };

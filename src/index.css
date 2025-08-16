@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Freedon Premium Trading Design System - All colors, gradients, fonts, etc defined here. 
+/* Premium Trading Design System - All colors, gradients, fonts, etc defined here. 
 All colors MUST be HSL.
 */
 
@@ -81,6 +81,56 @@ All colors MUST be HSL.
     --border: 0 0% 15%;
     --input: 0 0% 8%;
     --ring: 51 100% 50%;
+    /* Enhanced Responsive Utilities */
+    --mobile-padding: 1rem;
+    --tablet-padding: 2rem;
+    --desktop-padding: 3rem;
+  }
+
+  /* Enhanced Mobile-First Responsive Design */
+  @media (max-width: 640px) {
+    .trading-card {
+      margin: 0 var(--mobile-padding);
+      padding: 1rem;
+    }
+    
+    .btn-hero {
+      width: 100%;
+      padding: 1rem 2rem;
+    }
+    
+    .text-responsive {
+      font-size: clamp(1.5rem, 5vw, 3rem);
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .trading-card {
+      margin: 0 var(--tablet-padding);
+    }
+  }
+}
+
+  /* Background Animations */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+      radial-gradient(circle at 20% 50%, hsl(51 100% 50% / 0.05) 0%, transparent 70%),
+      radial-gradient(circle at 80% 20%, hsl(45 100% 47% / 0.03) 0%, transparent 70%),
+      radial-gradient(circle at 40% 80%, hsl(51 100% 50% / 0.04) 0%, transparent 70%);
+    animation: bg-animate 20s ease-in-out infinite;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  @keyframes bg-animate {
+    0%, 100% { opacity: 0.3; transform: scale(1) rotate(0deg); }
+    50% { opacity: 0.6; transform: scale(1.1) rotate(180deg); }
   }
 }
 

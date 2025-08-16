@@ -3,7 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import PriceTicker from "@/components/PriceTicker";
+import TradingViewWidget from "@/components/TradingViewWidget";
+import CustomerCare from "@/components/CustomerCare";
+import AnimatedCounter from "@/components/AnimatedCounter";
 import heroBackground from "@/assets/hero-background.jpg";
 
 const Home = () => {
@@ -31,10 +33,10 @@ const Home = () => {
   ];
 
   const stats = [
-    { value: "10,000+", label: "Active Traders" },
-    { value: "500+", label: "Trading Bots" },
+    { value: <AnimatedCounter end={10} suffix="K+" />, label: "Active Traders" },
+    { value: <AnimatedCounter end={500} suffix="+" />, label: "Trading Bots" },
     { value: "24/7", label: "Support" },
-    { value: "99.9%", label: "Uptime" },
+    { value: <AnimatedCounter end={99.9} suffix="%" />, label: "Uptime" },
   ];
 
   return (
@@ -85,19 +87,19 @@ const Home = () => {
                 className="btn-outline-gold"
                 asChild
               >
-                <a 
-                  href="https://dbot.freedon.live" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
+                  <a 
+                    href="https://freedon.live/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
                   Login to Trading
                 </a>
               </Button>
             </div>
 
-            {/* Live Price Ticker */}
+            {/* Live TradingView Ticker */}
             <div className="mb-8">
-              <PriceTicker />
+              <TradingViewWidget isTickerTape={true} height="60" />
             </div>
           </div>
         </div>
@@ -189,7 +191,7 @@ const Home = () => {
               asChild
             >
               <a 
-                href="https://wa.me/1234567890" 
+                href="https://wa.me/254794432921" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -201,6 +203,7 @@ const Home = () => {
       </section>
 
       <Footer />
+      <CustomerCare />
     </div>
   );
 };
