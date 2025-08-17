@@ -82,162 +82,92 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-            {/* Contact Form */}
-            <div className="lg:col-span-2">
-              <Card className="trading-card">
-                <CardHeader>
-                  <CardTitle className="text-2xl text-foreground">Send Us a Message</CardTitle>
-                  <CardDescription className="text-muted-foreground">
-                    Fill out the form below and we'll get back to you within 24 hours
-                  </CardDescription>
+          {/* Contact Methods */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            {contactMethods.map((method, index) => (
+              <Card key={index} className="trading-card group">
+                <CardHeader className="pb-4">
+                  <div className="flex items-center space-x-3">
+                    <div className={`p-3 rounded-lg ${
+                      method.color === 'primary' ? 'bg-primary/20' :
+                      method.color === 'accent' ? 'bg-accent/20' :
+                      'bg-secondary/20'
+                    } group-hover:scale-110 transition-transform`}>
+                      <method.icon className={`h-6 w-6 ${
+                        method.color === 'primary' ? 'text-primary' :
+                        method.color === 'accent' ? 'text-accent' :
+                        'text-secondary-foreground'
+                      }`} />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <CardTitle className="text-base sm:text-lg text-foreground">
+                        {method.title}
+                      </CardTitle>
+                      <CardDescription className="text-muted-foreground text-sm">
+                        {method.description}
+                      </CardDescription>
+                    </div>
+                  </div>
                 </CardHeader>
-                <CardContent>
-                  <form className="space-y-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div className="space-y-2">
-                        <Label htmlFor="firstName" className="text-foreground">First Name</Label>
-                        <Input 
-                          id="firstName" 
-                          placeholder="Enter your first name"
-                          className="bg-input border-border focus:border-primary"
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="lastName" className="text-foreground">Last Name</Label>
-                        <Input 
-                          id="lastName" 
-                          placeholder="Enter your last name"
-                          className="bg-input border-border focus:border-primary"
-                        />
-                      </div>
+                <CardContent className="pt-0">
+                  <div className="space-y-3">
+                    <div className="flex items-center space-x-2">
+                      <span className="text-sm text-muted-foreground">Contact:</span>
+                      <span className="font-medium text-foreground text-sm">{method.contact}</span>
                     </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="email" className="text-foreground">Email Address</Label>
-                      <Input 
-                        id="email" 
-                        type="email"
-                        placeholder="Enter your email address"
-                        className="bg-input border-border focus:border-primary"
-                      />
+                    <div className="flex items-center space-x-2">
+                      <Clock className="h-4 w-4 text-muted-foreground" />
+                      <span className="text-sm text-muted-foreground">{method.available}</span>
                     </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="subject" className="text-foreground">Subject</Label>
-                      <Input 
-                        id="subject" 
-                        placeholder="What's this regarding?"
-                        className="bg-input border-border focus:border-primary"
-                      />
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="message" className="text-foreground">Message</Label>
-                      <Textarea 
-                        id="message"
-                        placeholder="Tell us how we can help you..."
-                        rows={6}
-                        className="bg-input border-border focus:border-primary resize-none"
-                      />
-                    </div>
-
                     <Button 
-                      type="submit" 
-                      className="w-full btn-premium"
+                      className="w-full btn-premium text-sm"
+                      asChild
                     >
-                      Send Message
-                    </Button>
-                  </form>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* Contact Methods */}
-            <div className="space-y-6">
-              {contactMethods.map((method, index) => (
-                <Card key={index} className="trading-card group">
-                  <CardHeader className="pb-4">
-                    <div className="flex items-center space-x-3">
-                      <div className={`p-3 rounded-lg ${
-                        method.color === 'primary' ? 'bg-primary/20' :
-                        method.color === 'accent' ? 'bg-accent/20' :
-                        'bg-secondary/20'
-                      } group-hover:scale-110 transition-transform`}>
-                        <method.icon className={`h-6 w-6 ${
-                          method.color === 'primary' ? 'text-primary' :
-                          method.color === 'accent' ? 'text-accent' :
-                          'text-secondary-foreground'
-                        }`} />
-                      </div>
-                      <div>
-                        <CardTitle className="text-lg text-foreground">
-                          {method.title}
-                        </CardTitle>
-                        <CardDescription className="text-muted-foreground text-sm">
-                          {method.description}
-                        </CardDescription>
-                      </div>
-                    </div>
-                  </CardHeader>
-                  <CardContent className="pt-0">
-                    <div className="space-y-3">
-                      <div className="flex items-center space-x-2">
-                        <span className="text-sm text-muted-foreground">Contact:</span>
-                        <span className="font-medium text-foreground">{method.contact}</span>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <Clock className="h-4 w-4 text-muted-foreground" />
-                        <span className="text-sm text-muted-foreground">{method.available}</span>
-                      </div>
-                      <Button 
-                        className="w-full btn-premium"
-                        asChild
+                      <a 
+                        href={method.href} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
                       >
-                        <a 
-                          href={method.href} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                        >
-                          Contact Now
-                        </a>
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-
-              {/* Office Info */}
-              <Card className="trading-card">
-                <CardHeader>
-                  <CardTitle className="text-lg text-foreground flex items-center">
-                    <MapPin className="h-5 w-5 mr-2 text-primary" />
-                    Our Office
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-2">
-                    <p className="text-foreground font-medium">Freedon Trading HQ</p>
-                    <p className="text-muted-foreground text-sm">
-                      123 Financial District<br />
-                      Trading Plaza, Suite 400<br />
-                      New York, NY 10004
-                    </p>
+                        Contact Now
+                      </a>
+                    </Button>
                   </div>
                 </CardContent>
               </Card>
-            </div>
+            ))}
+          </div>
+
+          {/* Office Info */}
+          <div className="max-w-md mx-auto mb-16">
+            <Card className="trading-card">
+              <CardHeader>
+                <CardTitle className="text-lg text-foreground flex items-center justify-center">
+                  <MapPin className="h-5 w-5 mr-2 text-primary" />
+                  Our Office
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <div className="space-y-2">
+                  <p className="text-foreground font-medium">Freedon Trading HQ</p>
+                  <p className="text-muted-foreground text-sm">
+                    123 Financial District<br />
+                    Trading Plaza, Suite 400<br />
+                    New York, NY 10004
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Social Media */}
           <div className="trading-card text-center">
-            <h2 className="text-2xl font-display font-bold text-foreground mb-4">
+            <h2 className="text-xl sm:text-2xl font-display font-bold text-foreground mb-4">
               Follow Us on Social Media
             </h2>
-            <p className="text-muted-foreground mb-8">
+            <p className="text-muted-foreground mb-8 text-sm sm:text-base">
               Stay updated with the latest trading insights, market analysis, and platform updates
             </p>
-            <div className="flex justify-center space-x-6">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-2xl mx-auto">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
@@ -246,10 +176,10 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="group"
                 >
-                  <div className="flex flex-col items-center space-y-2 p-4 rounded-lg border border-border hover:border-primary transition-colors">
-                    <social.icon className="h-8 w-8 text-muted-foreground group-hover:text-primary transition-colors" />
+                  <div className="flex flex-col items-center space-y-2 p-3 sm:p-4 rounded-lg border border-border hover:border-primary transition-colors">
+                    <social.icon className="h-6 w-6 sm:h-8 sm:w-8 text-muted-foreground group-hover:text-primary transition-colors" />
                     <div className="text-center">
-                      <div className="font-medium text-foreground group-hover:text-primary transition-colors">
+                      <div className="font-medium text-sm sm:text-base text-foreground group-hover:text-primary transition-colors">
                         {social.name}
                       </div>
                       <div className="text-xs text-muted-foreground">
