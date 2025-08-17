@@ -137,28 +137,6 @@ const Contact = () => {
             ))}
           </div>
 
-          {/* Office Info */}
-          <div className="max-w-md mx-auto mb-16">
-            <Card className="trading-card">
-              <CardHeader>
-                <CardTitle className="text-lg text-foreground flex items-center justify-center">
-                  <MapPin className="h-5 w-5 mr-2 text-primary" />
-                  Our Office
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <div className="space-y-2">
-                  <p className="text-foreground font-medium">Freedon Trading HQ</p>
-                  <p className="text-muted-foreground text-sm">
-                    123 Financial District<br />
-                    Trading Plaza, Suite 400<br />
-                    New York, NY 10004
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
           {/* Social Media */}
           <div className="trading-card text-center">
             <h2 className="text-xl sm:text-2xl font-display font-bold text-foreground mb-4">
