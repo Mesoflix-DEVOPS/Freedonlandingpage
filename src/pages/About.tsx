@@ -30,9 +30,9 @@ const About = () => {
   ];
 
   const achievements = [
-    { value: "10,000+", label: "Happy Traders" },
-    { value: "500+", label: "Trading Bots Created" },
-    { value: "95%", label: "Success Rate" },
+    { value: "1,200+", label: "Happy Traders" },
+    { value: "25+", label: "Trading Bots Created" },
+    { value: "87%", label: "Success Rate" },
     { value: "3 Years", label: "Industry Experience" }
   ];
 
@@ -84,9 +84,9 @@ const About = () => {
                     only to institutional traders and wealthy individuals.
                   </p>
                   <p>
-                    Founded by CEO Freddy, a passionate trader with years of experience in algorithmic 
-                    trading and market analysis, Freedon has grown from a small project to a thriving 
-                    community of over 10,000 active traders.
+                Founded by CEO Freddy, a passionate trader with years of experience in algorithmic 
+                trading and market analysis, Freedon has grown from a small project to a thriving 
+                community of over 1,200 active traders.
                   </p>
                   <p>
                     We believe that successful trading shouldn't be limited by your background or 
@@ -239,7 +239,7 @@ const About = () => {
                   asChild
                 >
                   <a 
-                    href="https://deriv.com" 
+                    href="https://track.deriv.com/_TH5LC8pLrKFBMfcXPt5VjGNd7ZgqdRLk/1/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
@@ -253,7 +253,7 @@ const About = () => {
                   asChild
                 >
                   <a 
-                    href="https://wa.me/1234567890" 
+                    href="https://wa.me/254794432921?text=Hello! I want to contact your team for more information about Freedon" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >

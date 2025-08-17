@@ -24,7 +24,7 @@ const Marketplace = () => {
       description: "Advanced trend-following bot with intelligent market analysis and automated entry/exit strategies.",
       category: "free",
       rating: 4.8,
-      downloads: "2.3k",
+      downloads: "156",
       features: ["Auto Risk Management", "Real-time Analysis", "Stop Loss Protection"],
       isPremium: false,
     },
@@ -34,7 +34,7 @@ const Marketplace = () => {
       description: "Comprehensive market analysis system with advanced pattern recognition and signal generation.",
       category: "free",
       rating: 4.9,
-      downloads: "1.8k",
+      downloads: "189",
       features: ["Pattern Recognition", "Signal Generation", "Market Analytics"],
       isPremium: false,
     },
@@ -44,7 +44,7 @@ const Marketplace = () => {
       description: "Intelligent multi-market switching bot that adapts to changing market conditions automatically.",
       category: "free",
       rating: 4.7,
-      downloads: "3.1k",
+      downloads: "234",
       features: ["Multi-Market Support", "Auto-Switching", "Adaptive Strategy"],
       isPremium: false,
     },
@@ -54,7 +54,7 @@ const Marketplace = () => {
       description: "Smart recovery system with advanced loss prevention and profit maximization algorithms.",
       category: "free",
       rating: 4.6,
-      downloads: "1.9k",
+      downloads: "98",
       features: ["Recovery Algorithm", "Loss Prevention", "Profit Maximization"],
       isPremium: false,
     },
@@ -74,7 +74,7 @@ const Marketplace = () => {
       description: "Professional multi-strategy bot combining scalping, swing, and trend-following approaches.",
       category: "premium",
       rating: 4.8,
-      downloads: "2.7k",
+      downloads: "67",
       features: ["Multiple Strategies", "Advanced Analytics", "Professional Tools"],
       isPremium: true,
     },
@@ -175,7 +175,7 @@ const Marketplace = () => {
                       asChild
                     >
                       <a 
-                        href="https://wa.me/254794432921" 
+                        href={`https://wa.me/254794432921?text=Hello! I'm interested in the ${bot.title}. Can you please provide more information?`}
                         target="_blank" 
                         rel="noopener noreferrer"
                       >
@@ -203,7 +203,7 @@ const Marketplace = () => {
               asChild
             >
               <a 
-                href="https://wa.me/254794432921" 
+                href="https://wa.me/254794432921?text=Hello! I need a custom trading bot. Can we discuss the requirements?" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >

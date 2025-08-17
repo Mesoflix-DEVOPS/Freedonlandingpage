@@ -122,9 +122,22 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-xs text-muted-foreground text-center md:text-left">
-              © 2024 Freedon. All rights reserved.
-            </p>
+            <div className="flex flex-col items-center md:items-start space-y-2">
+              <p className="text-xs text-muted-foreground text-center md:text-left">
+                © 2024 Freedon. All rights reserved.
+              </p>
+              <p className="text-xs text-muted-foreground text-center md:text-left">
+                Developed by{" "}
+                <a 
+                  href="https://wa.me/254723913800?text=Hello! I am interested in web development services" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary hover:text-primary/80 font-medium transition-colors"
+                >
+                  Mesoflix
+                </a>
+              </p>
+            </div>
             <p className="text-xs text-muted-foreground text-center md:text-right max-w-md">
               <span className="font-semibold">Disclaimer:</span> Freedon is an independent platform 
               for Deriv traders. Trading involves risk. Always trade responsibly.

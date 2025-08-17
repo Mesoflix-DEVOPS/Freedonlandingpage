@@ -131,7 +131,7 @@ const Analysis = () => {
                       asChild
                     >
                       <a 
-                        href="https://freedon.live/" 
+                        href="https://dbot.freedon.live" 
                         target="_blank" 
                         rel="noopener noreferrer"
                       >
@@ -182,7 +182,7 @@ const Analysis = () => {
                   asChild
                 >
                   <a 
-                    href="https://freedon.live/" 
+                    href="https://dbot.freedon.live" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
@@ -196,7 +196,7 @@ const Analysis = () => {
                   asChild
                 >
                   <a 
-                    href="https://deriv.com" 
+                    href="https://track.deriv.com/_TH5LC8pLrKFBMfcXPt5VjGNd7ZgqdRLk/1/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
@@ -217,7 +217,7 @@ const Analysis = () => {
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-gradient-gold mb-2">
-                <AnimatedCounter end={50} suffix="+" />
+                <AnimatedCounter end={6} suffix="+" />
               </div>
               <div className="text-muted-foreground">Analysis Tools</div>
             </div>
@@ -229,7 +229,7 @@ const Analysis = () => {
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-gradient-gold mb-2">
-                <AnimatedCounter end={1} suffix="M+" />
+                <AnimatedCounter end={125} suffix="K+" />
               </div>
               <div className="text-muted-foreground">Data Points</div>
             </div>

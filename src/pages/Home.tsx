@@ -33,10 +33,10 @@ const Home = () => {
   ];
 
   const stats = [
-    { value: <AnimatedCounter end={10} suffix="K+" />, label: "Active Traders" },
-    { value: <AnimatedCounter end={500} suffix="+" />, label: "Trading Bots" },
+    { value: <AnimatedCounter end={1.2} suffix="K+" />, label: "Active Traders" },
+    { value: <AnimatedCounter end={25} suffix="+" />, label: "Trading Bots" },
     { value: "24/7", label: "Support" },
-    { value: <AnimatedCounter end={99.9} suffix="%" />, label: "Uptime" },
+    { value: <AnimatedCounter end={98.5} suffix="%" />, label: "Uptime" },
   ];
 
   return (
@@ -72,7 +72,7 @@ const Home = () => {
                 asChild
               >
                 <a 
-                  href="https://deriv.com" 
+                  href="https://track.deriv.com/_TH5LC8pLrKFBMfcXPt5VjGNd7ZgqdRLk/1/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
@@ -88,7 +88,7 @@ const Home = () => {
                 asChild
               >
                   <a 
-                    href="https://freedon.live/" 
+                    href="https://dbot.freedon.live" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
@@ -176,7 +176,7 @@ const Home = () => {
               asChild
             >
               <a 
-                href="https://deriv.com" 
+                href="https://track.deriv.com/_TH5LC8pLrKFBMfcXPt5VjGNd7ZgqdRLk/1/" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >

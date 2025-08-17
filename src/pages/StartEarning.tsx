@@ -19,7 +19,7 @@ const StartEarning = () => {
         "Marketing materials provided"
       ],
       cta: "Join as Affiliate",
-      href: "https://deriv.com/partners/affiliate/",
+      href: "https://track.deriv.com/_TH5LC8pLrKFBMfcXPt5VjGNd7ZgqdRLk/1/",
       color: "primary"
     },
     {
@@ -33,7 +33,7 @@ const StartEarning = () => {
         "Professional support"
       ],
       cta: "Open Account",
-      href: "https://deriv.com",
+      href: "https://track.deriv.com/_TH5LC8pLrKFBMfcXPt5VjGNd7ZgqdRLk/1/",
       color: "accent"
     },
     {
@@ -53,8 +53,8 @@ const StartEarning = () => {
   ];
 
   const stats = [
-    { value: "$2M+", label: "Total Commissions Paid" },
-    { value: "15,000+", label: "Active Affiliates" },
+    { value: "$45K+", label: "Total Commissions Paid" },
+    { value: "850+", label: "Active Affiliates" },
     { value: "95%", label: "Payout Success Rate" },
     { value: "24h", label: "Average Payout Time" }
   ];
@@ -220,7 +220,7 @@ const StartEarning = () => {
                 asChild
               >
                 <a 
-                  href="https://deriv.com/partners/affiliate/" 
+                  href="https://track.deriv.com/_TH5LC8pLrKFBMfcXPt5VjGNd7ZgqdRLk/1/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
@@ -244,7 +244,7 @@ const StartEarning = () => {
               asChild
             >
               <a 
-                href="https://wa.me/1234567890" 
+                href="https://wa.me/254794432921?text=Hello! I need help getting started with earning on Deriv. Can you guide me?" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
