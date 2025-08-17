@@ -109,7 +109,6 @@ All colors MUST be HSL.
       margin: 0 var(--tablet-padding);
     }
   }
-}
 
   /* Background Animations */
   body::before {
