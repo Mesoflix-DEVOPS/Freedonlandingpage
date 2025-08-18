@@ -92,7 +92,7 @@ const Home = () => {
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
-                  Login to Trading
+                  Already have account? Start trading now
                 </a>
               </Button>
             </div>

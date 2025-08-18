@@ -61,11 +61,11 @@ const Navigation = () => {
               asChild
             >
               <a 
-                href="https://freedon.live/" 
+                href="https://dbot.freedon.live/" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                Login to Trading
+                Start Trading
               </a>
             </Button>
             <Button 
@@ -125,11 +125,11 @@ const Navigation = () => {
                   asChild
                 >
                   <a 
-                    href="https://freedon.live/" 
+                    href="https://dbot.freedon.live/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
-                    Login to Trading
+                    Start Trading
                   </a>
                 </Button>
                 <Button 

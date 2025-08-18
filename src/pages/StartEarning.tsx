@@ -46,7 +46,7 @@ const StartEarning = () => {
         "24/7 community support",
         "Regular strategy updates"
       ],
-      cta: "Login to Trading",
+      cta: "Start Trading",
       href: "https://dbot.freedon.live",
       color: "secondary"
     }
