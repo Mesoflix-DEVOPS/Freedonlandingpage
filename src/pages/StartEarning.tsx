@@ -19,7 +19,7 @@ const StartEarning = () => {
         "Marketing materials provided"
       ],
       cta: "Join as Affiliate",
-      href: "https://track.deriv.com/_TH5LC8pLrKFBMfcXPt5VjGNd7ZgqdRLk/1/",
+      href: "https://track.deriv.com/_TH5LC8pLrKEKPDwCg-6bwGNd7ZgqdRLk/1/",
       color: "primary"
     },
     {
