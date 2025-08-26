@@ -74,7 +74,7 @@ const Navigation = () => {
               asChild
             >
               <a 
-                href="https://deriv.com" 
+                href="https://track.deriv.com/_TH5LC8pLrKEKqFKZ7JdnQ2Nd7ZgqdRLk/1/" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
