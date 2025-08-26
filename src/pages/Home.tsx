@@ -72,7 +72,7 @@ const Home = () => {
                 asChild
               >
                 <a 
-                  href="https://track.deriv.com/_TH5LC8pLrKFBMfcXPt5VjGNd7ZgqdRLk/1/" 
+                  href="https://track.deriv.com/_TH5LC8pLrKEKqFKZ7JdnQ2Nd7ZgqdRLk/1/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
