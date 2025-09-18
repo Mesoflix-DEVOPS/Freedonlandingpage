@@ -60,8 +60,8 @@ const Marketplace = () => {
     },
     {
       id: 5,
-      title: "Premium Version 2.6 Updates Bot",
-      description: "Latest premium trading bot with cutting-edge algorithms and enhanced performance features.",
+      title: "THE BINOTEK 5 _ 2025",
+      description: " Price: $500 USD (Ksh 65,000) ~💰With this bot you can make 95% daily profit | –95% win rate. ✅ User-Friendly & Easy to Use",
       category: "premium",
       rating: 4.9,
       downloads: "856",
@@ -70,8 +70,8 @@ const Marketplace = () => {
     },
     {
       id: 6,
-      title: "Multi Strategy Trading Bot",
-      description: "Professional multi-strategy bot combining scalping, swing, and trend-following approaches.",
+      title: "The ANEX - ENHANCED TRADING AI",
+      description: "Price: $1,150 USD (Ksh 148,000) ~💰 Profit: 100%–500% | Top Pick 🔝 – Proven 100% Win Rate✅ Simple, Fast & Beginner-Friendly",
       category: "premium",
       rating: 4.8,
       downloads: "67",
