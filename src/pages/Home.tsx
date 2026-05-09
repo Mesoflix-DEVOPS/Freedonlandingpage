@@ -88,7 +88,7 @@ const Home = () => {
                 asChild
               >
                   <a 
-                    href="https://dbot.freedon.live" 
+                    href="https://bot.freedon.live" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >

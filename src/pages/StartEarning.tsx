@@ -47,7 +47,7 @@ const StartEarning = () => {
         "Regular strategy updates"
       ],
       cta: "Start Trading",
-      href: "https://dbot.freedon.live",
+      href: "https://bot.freedon.live",
       color: "secondary"
     }
   ];
